@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         `;
         
         document.getElementById("view-posts").addEventListener("click", () => {
-            window.location.href = `user-posts.html?id=${userId}`;
+            window.location.href = `post.html?id=${userId}`;
         });
     } catch (error) {
         console.error("Error fetching user details:", error);

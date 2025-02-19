@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const users = await response.json();
         userList.innerHTML = users.map(user => `
             <div class="user-item">
-                <a href="user-detail.html?id=${user.id}">${user.name}</a>
+                <a href="detail.html?id=${user.id}">${user.name}</a>
             </div>
         `).join("");
     } catch (error) {
